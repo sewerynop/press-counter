@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Licznik_Przycisniec" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LICZNIK PRZYCIŚNIĘĆ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDm-c6-95M">
+                                <rect key="frame" x="0.0" y="50" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LlQ-lD-0Eq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.93423329479999995" green="0.97088173519999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Przycisk został przyciśnięty..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmb-5H-jjY">
+                                <rect key="frame" x="0.0" y="115" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DF9-YD-IZ2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3f5-bl-koQ">
+                                <rect key="frame" x="144" y="377" width="86" height="38"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="h98-09-Y0N"/>
+                                    <constraint firstAttribute="width" constant="86" id="uqb-mg-qE9"/>
+                                </constraints>
+                                <state key="normal" title="RESET">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oil-af-go8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HJ-8a-von">
+                                <rect key="frame" x="111" y="237" width="152" height="47"/>
+                                <color key="backgroundColor" red="0.730611911" green="0.089528932239999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="0Nm-eu-A3U"/>
+                                    <constraint firstAttribute="width" constant="152" id="ylT-Ad-mSh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="PRZYCISK">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EHg-b7-U8U"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.62745098039215685" green="0.62745098039215685" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="LDm-c6-95M" secondAttribute="trailing" id="8oK-Rw-49p"/>
+                            <constraint firstItem="nmb-5H-jjY" firstAttribute="top" secondItem="LDm-c6-95M" secondAttribute="bottom" constant="35" id="IR6-9Z-yj0"/>
+                            <constraint firstItem="7HJ-8a-von" firstAttribute="top" secondItem="nmb-5H-jjY" secondAttribute="bottom" constant="72" id="KjX-hi-ACa"/>
+                            <constraint firstItem="7HJ-8a-von" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="95" id="NOJ-Ze-OSZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7HJ-8a-von" secondAttribute="trailing" constant="96" id="RRi-Th-kug"/>
+                            <constraint firstItem="nmb-5H-jjY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Zfm-Lt-zEG"/>
+                            <constraint firstItem="3f5-bl-koQ" firstAttribute="top" secondItem="7HJ-8a-von" secondAttribute="bottom" constant="93" id="cnQ-xE-dk1"/>
+                            <constraint firstItem="LDm-c6-95M" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="dou-7Q-E7V"/>
+                            <constraint firstItem="3f5-bl-koQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="128" id="khz-nF-8um"/>
+                            <constraint firstItem="LDm-c6-95M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nG8-3f-1xr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3f5-bl-koQ" secondAttribute="trailing" constant="129" id="xBd-aK-jkX"/>
+                            <constraint firstAttribute="trailing" secondItem="nmb-5H-jjY" secondAttribute="trailing" id="yjz-mG-97e"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="LDm-c6-95M"/>
+                                <exclude reference="nmb-5H-jjY"/>
+                                <exclude reference="3f5-bl-koQ"/>
+                                <exclude reference="7HJ-8a-von"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="LDm-c6-95M"/>
+                                <include reference="nmb-5H-jjY"/>
+                                <include reference="3f5-bl-koQ"/>
+                                <include reference="7HJ-8a-von"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="labelText" destination="nmb-5H-jjY" id="3x1-Qt-ETJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="564" y="538.38080959520244"/>
+        </scene>
+    </scenes>
+</document>
